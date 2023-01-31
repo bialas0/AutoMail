@@ -20,3 +20,7 @@ An optimised e-mail client allowing for automated e-mails to be send through .tx
 #
 ![image](https://user-images.githubusercontent.com/118835576/215896702-6410e63f-e909-40de-8503-7fb0e82be4ce.png)
 #
+#
+#
+# !! It is flagged by antivirus software, the scan should eliminate problems !!
+![image](https://user-images.githubusercontent.com/118835576/215900804-a2c6cb27-6efc-402e-9a88-6e69d109a295.png)
