@@ -10,11 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-
-// Add continious checks for each text box, which will validate data, showing
-// a small message saying that the input is in incorrect format. 
-
-
 namespace AutoMail
 {
     public partial class AutoMail : Form
@@ -109,11 +104,6 @@ namespace AutoMail
         
         private string file = String.Empty;
 
-        private void AutoMail_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void fileExpOpen_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -123,11 +113,7 @@ namespace AutoMail
                 pathInput.Text = ofd.FileName;
             }
         }
-
-        private void pathInput_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
         private string email;
 
         private void emailInput_TextChanged(object sender, EventArgs e)
@@ -146,11 +132,6 @@ namespace AutoMail
             DataManagment dataManagment = new DataManagment();
         }
 
-        private void msgInputRich_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void sender_Click(object sender, EventArgs e)
         {
             DataManagment dataManagment = new DataManagment();
@@ -161,29 +142,14 @@ namespace AutoMail
             dataManagment.Subject = subjectInput.Text;
             dataManagment.Message = msgInputRich.Text;
             dataManagment.DelayTime = double.Parse(tDelayInput.Text);
-            //dataManagment.Test();
+            
             dataManagment.LoadData();
             dataManagment.SendEmail();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void githubProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/bialas0\r\n");
-        }
-
-        private void newsGB_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void attachFile_Click(object sender, EventArgs e)
-        {
-
         }
 
         bool isShown = false;
@@ -305,11 +271,6 @@ namespace AutoMail
         private void sender_MouseHover(object senders, EventArgs e)
         {
             toolTip1.Show("Send emails to all emails\nincluded in the text file.", sender);
-        }
-
-        private void newsLable1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
