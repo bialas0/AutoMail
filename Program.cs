@@ -12,9 +12,6 @@ namespace AutoMail
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -49,16 +46,6 @@ namespace AutoMail
                 while (!r.EndOfStream)
                 {
                     email = r.ReadLine();
-                    //vaild = IsValidEmail(email);
-
-                    //if (vaild)
-                    //{
-                    //    validEmailsQ.Enqueue(email);
-                    //}
-                    //else
-                    //{
-                    //    invalidEmailsQ.Enqueue(email);
-                    //}
                     validEmailsQ.Enqueue(email);
                 }
                 r.Close();
@@ -68,25 +55,7 @@ namespace AutoMail
                 throw new Exception("ERROR [001]: Select a readable text file.");
             }
         }
-        //private bool IsValidEmail(string email)
-        //{
-        //    var trimmedEmail = email.Trim();
-
-        //    if (trimmedEmail.EndsWith("."))
-        //    {
-        //        return false;
-        //    }
-        //    try
-        //    {
-        //        var addr = new System.Net.Mail.MailAddress(email);
-        //        return addr.Address == trimmedEmail;
-        //    }
-        //    catch
-        //    {
-        //        return false;
-        //    }
-        //}
-
+        
         private SmtpClient smtpClient = new SmtpClient();
         private MailMessage msg = new MailMessage();
 
