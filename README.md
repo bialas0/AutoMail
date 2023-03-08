@@ -13,7 +13,11 @@ An optimised e-mail client allowing for automated e-mails to be send through .tx
 ![image](https://user-images.githubusercontent.com/118835576/215898601-84b4948b-6b3b-4d80-90be-d685878a8f8c.png)
 ![image](https://user-images.githubusercontent.com/118835576/215899063-4fa273e8-111c-4956-b130-814af0d320f0.png)
 #
-## AutoMail
+# Guide
+### To send automated emails, just select a text file that contains a list of emails and make sure to use your app email along with the key that you generated (input that inside of the password field). Then just fill out the subject and the message that you wish to send. If you are experiencing lag, freezing, or crashes when trying to send emails (especially at high volumes), just input an appropriate delay in the delay field. Though it might be slower, it will help with sending your emails error free, making this feature useful when internet speed is not in your favour.
+#
+If you experience any problems, just open an issue on this repository...
+# Screenshots of the software
 #### To then send e-mails, you must fill out the form provided, use your app e-mail, and your generated OTP. 
 #
 ![image](https://user-images.githubusercontent.com/118835576/215896835-85df1a41-8716-4e25-87d0-0c12d5011795.png)
@@ -21,6 +25,3 @@ An optimised e-mail client allowing for automated e-mails to be send through .tx
 ![image](https://user-images.githubusercontent.com/118835576/215896702-6410e63f-e909-40de-8503-7fb0e82be4ce.png)
 #
 #
-#
-# !! It is flagged by antivirus software, the scan should eliminate problems !!
-![image](https://user-images.githubusercontent.com/118835576/215900804-a2c6cb27-6efc-402e-9a88-6e69d109a295.png)
